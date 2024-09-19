@@ -74,7 +74,7 @@ function App() {
             <ul className=" p-4 rounded-md">
               {messages.map((message, index) => (
                 <li key={index} className="mb-2 flex flex-row justify-start gap-7 bg-gray-100 p-4 rounded-md">
-                  <strong>{message.username}:</strong> 
+                  <strong>{message.username}<span className='select-none'>:</span></strong> 
                   {message.message}
                 </li>
               ))}
